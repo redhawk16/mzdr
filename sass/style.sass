@@ -1,0 +1,219 @@
+html, body
+	display: flex
+	flex-direction: column
+	font-family: 'Roboto', sans-serif
+	box-sizing: border-box
+	margin: 0
+	height: 100%
+
+header
+	width: 65%
+	margin: auto
+	margin-top: 1rem
+	margin-bottom: 2rem
+	display: flex
+	flex-direction: column
+
+footer
+	display: flex
+	flex: 0 0 auto
+	width: 100%
+
+.header-top
+	display: inline-flex
+	margin-bottom: 1rem
+
+	&__title
+		margin: .5rem
+		font-weight: 300
+		font-size: 24px
+		color: #505050
+
+	&__blind
+		display: flex
+		margin: .5rem
+		flex: auto
+		justify-content: flex-end
+
+		&-text
+			cursor: pointer
+			margin: .9rem .5rem
+			font-weight: 300
+			font-size: 15px
+
+.header-bottom
+	background-color: #003774
+	color: white
+
+	&__nav
+		& ul
+			display: flex
+			justify-content: space-between
+			padding: 0
+			margin: 0
+
+		&-item
+			cursor: pointer
+			list-style: none
+			padding: .3rem 1rem
+
+			& a
+				text-decoration: none
+				color: white
+
+			&:hover 
+				background-color: #003066
+
+			&.active
+				background-color: #f3f3f3
+				& a
+					color: #003066
+	
+	&__dropdown
+		& ul
+			display: flex
+			flex-wrap: wrap
+			padding: 0
+			margin: 0
+			background-color: #f3f3f3
+
+		&-menu-item
+			display: none
+			visibility: hidden
+
+		&-menu-item.active
+			display: block
+			visibility: visible
+
+		&-item
+			cursor: pointer
+			list-style: none
+			padding: .3rem 1rem
+			transition: background-color .2s ease
+
+			& a
+				text-decoration: none
+				color: #505050
+				transition: color .2s ease
+
+			&:hover
+				background-color: #e2e2e2
+
+
+.content
+	display: flex
+	flex: 1 0 auto
+	width: 65%
+	margin: 0 auto
+	flex-wrap: wrap
+
+	p .pbold
+		font-weight: 600
+		padding-left: 1.75rem
+
+	.news
+		width: 100%
+		margin: 2rem 0
+
+		&-title
+			font-weight: 400
+			margin-bottom: 1.5rem
+		
+		&__item
+			display: flex
+			border-bottom: 1px solid #ebebeb
+			padding: .8rem 0
+			transition: .3s all ease-in-out
+
+			&:hover
+				background-color: lighten(#f7f7f7, 2)
+
+			&:last-child
+				border-bottom: none
+
+			&-body
+				margin-left: 1rem
+
+			&-logo
+				width: 100px
+				margin-top: auto
+				margin-bottom: auto
+				vertical-align: middle
+
+			&-title
+				text-decoration: none
+				color: black
+				font-size: 22px
+				margin: 0
+
+			&-desc
+				font-weight: 300
+				margin: 0
+
+			&-time
+				color: #505050
+				font-size: 14px
+				font-weight: 300
+				margin: 0
+
+
+.footer
+	width: 100%
+
+	&-bottom
+		height: 2rem
+		line-height: 2rem
+		text-align: center
+		background-color: #003774
+		color: white
+
+		& p
+			margin: 0
+
+// news.php
+.news-header
+	display: inline-flex
+	width: 100%
+
+	&__logo
+		max-width: 100px
+		max-height: 100px
+		margin-top: auto
+		margin-bottom: auto
+
+	&__title
+		margin-left: 2rem
+		margin-top: auto
+		margin-bottom: auto
+
+.news-content
+	display: flex
+	flex-direction: column
+	width: 100%
+	margin-top: 1rem
+
+	&__desc
+		text-indent: 2rem
+		
+	&__time
+
+/* staff.php */
+table
+	width: 100%
+
+	tr
+		border-bottom: 1px solid rgba(gray, .5)
+		&:last-child
+			border-bottom: none
+
+	th
+		text-align: center
+
+	td
+		padding: 0 1rem
+		font-weight: 400
+
+		&:first-child
+			text-align: left
+			width: 50%
+
