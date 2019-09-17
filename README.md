@@ -3,8 +3,8 @@
 [Открыть демо](http://u999451g.beget.tech/mzdr/index)
 
 ## Скриншоты
-**Главная страница**
+> **Главная страница**
 ![index php](screens/index.png?raw=true "Главная страница")
 
-**Новость**
+> **Новость**
 ![news php](screens/news.png?raw=true "Новость")
