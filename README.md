@@ -2,5 +2,8 @@
 Данный сайт был написан на 3 курсе, с использованием html, css, js, php.
 
 ## Скриншоты
+Главная страница
 ![index php](screens/index.png?raw=true "Главная страница")
+
+Новость
 ![news php](screens/news.png?raw=true "Новость")
